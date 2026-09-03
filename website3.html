@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        button {
+            background-color: #1e3a8a;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            margin: 5px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #3b82f6;
+        }
+        h1 {
+            color: #1e3a8a;
+            margin-top: 30px;
+        }
+        h2 {
+            color: #1e3a8a;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+            max-width: 700px;
+            margin: 12px auto;
+            line-height: 1.6;
+        }
+        #home, #about, #contact {
+            background-color:white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('about')">About</button>
+    <button onclick="showSection('contact')">Contact</button>
+
+    <br><br>
+
+    <div id="home">
+        <title>AJ Institute of Engineering and Technology</title>
+        <h1>Welcome to AJIET</h1>
+        <p>Create your future with us</p>
+    </div>
+
+    <div id="about" style="display: none;">
+        <h2>About College</h2>
+        <p>AJIET has multiple branches of CSE such as ICB, AI&ML, AI&DS and pure CS.</p>
+        <p>Admissions open for MBA and MCA students too!!</p>
+        <p>Student friendly infrastructure with a sports ground for sports.</p>
+        <p>AAKAR annual event where students join and celebrate together.</p>
+        <p>A medium sized canteen for more than 500+ students with overpriced samosas.</p>
+    </div>
+
+    <div id="contact" style="display: none;">
+        <h2>Contact</h2>
+        <p>Email: itzkevins@gmail.com</p>
+        <p>Ph no: 734</p>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('about').style.display = 'none';
+            document.getElementById('contact').style.display = 'none';
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
+
+
